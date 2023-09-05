@@ -61,8 +61,12 @@ export const FooterSecondFloorStyle = styled.div`
     css`
       display: grid;
       grid-template-rows: 0.5fr 1fr 0.1fr;
+      background: rgb(31, 57, 42);
     `}
-  ${(props) => props.mobile && css``}
+  ${(props) => props.mobile && css`
+      display: grid;
+      grid-template-rows: 0.5fr 1fr 0.1fr;
+      background: rgb(31, 57, 42);`}
 `;
 
 export const FooterSecondFloorMenu = styled.div`

@@ -60,6 +60,9 @@ export const NavbarLogoStyle = styled.div`
     props.largedesktop &&
     css`
       img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 220px;
       }
     `}
@@ -67,28 +70,40 @@ export const NavbarLogoStyle = styled.div`
     props.desktop &&
     css`
       img {
+        display: block;
         width: 170px;
+        margin-left: auto;
+        margin-right: auto;
       }
     `}
   ${(props) =>
     props.notebook &&
     css`
       img {
-        width: 130px;
+        display: block;
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto;
       }
     `}
   ${(props) =>
     props.tablet &&
     css`
       img {
+        display: block;
         width: 120px;
+        margin-left: auto;
+        margin-right: auto;
       }
     `}
   ${(props) =>
     props.mobile &&
     css`
       img {
+        display: block;
         width: 80px;
+        margin-left: auto;
+        margin-right: auto;
       }
     `}
 `;
@@ -157,27 +172,9 @@ export const NavbarLinks = styled.div`
         background: #122018;
       }
     `}
-  ${(props) =>
-    props.tablet &&
-    css`
-      a {
-        display: none;
-      }
-      Button {
-        display: none;
-      }
-    `}
-  ${(props) =>
-    props.mobile &&
-    css`
-      a {
-        display: none;
-      }
-      Button {
-        display: none;
-      }
-    `}
-  
+    @media (max-width: 960px) {
+    display: none;
+  }
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

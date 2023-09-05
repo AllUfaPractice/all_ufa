@@ -2,19 +2,22 @@ import styled from "styled-components";
 import { css } from "styled-components";
 
 export const HamburgerStyle = styled.nav`
-    ${(props) =>
+  ${(props) =>
     props.largedesktop &&
     css`
-    display: none;
+      display: none;
     `}
   ${(props) =>
     props.desktop &&
     css`
-    display: none;
+      display: none;
     `}
   ${(props) =>
     props.notebook &&
     css`
-    display: none;
+      display: none;
     `}
+    ${(props) => props.tablet && css``}
+  ${(props) => props.mobile && css``}
 `;
+
