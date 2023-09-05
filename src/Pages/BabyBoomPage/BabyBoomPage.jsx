@@ -21,6 +21,7 @@ import BBImage from "../../Images/BBImage.jpg";
 import { useMediaQuery } from "@mui/material";
 
 const BabyBoomPage = () => {
+
   const isLargeDesktop = useMediaQuery((theme) => theme.breakpoints.up("xl"));
   const isDesktop = useMediaQuery((theme) =>
     theme.breakpoints.between("lg", "xl")

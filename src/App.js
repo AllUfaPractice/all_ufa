@@ -7,6 +7,7 @@ import { theme } from "../src/styles/theme";
 import { ThemeProvider } from "@mui/material";
 import GlobalStyled from "./styles/global.styled";
 import { CssBaseline } from "@mui/material";
+import ScrollToTop from "./styles/ScrollToTop";
 
 export default function App() {
   return (
@@ -14,7 +15,9 @@ export default function App() {
       <CssBaseline />
       <GlobalStyled />
       <Router>
-        <AppRoutes />
+        <ScrollToTop>
+          <AppRoutes />
+        </ScrollToTop>
       </Router>
     </ThemeProvider>
   );
