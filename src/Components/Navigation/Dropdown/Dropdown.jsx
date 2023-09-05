@@ -40,47 +40,47 @@ const ModalButton = () => {
             <DropdownStyleModal>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
+                <Link to="/baby-boom">
                   Детки БУМ!
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/CookingShowPage/CookingShowPage.jsx">
+                <Link to="/cooking-show">
                   Куленарное шоу вкусно
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/UfaIsAware/UfaIsAwarePage.jsx">
+                <Link to="/ufa-is-aware">
                   Уфа в курсе
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/SummerUfa/SummerUfaPage.jsx">
+                <Link to="/summer-ufa">
                   Летняя Уфа
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/WeatherPage/WeatherPage.jsx">
+                <Link to="/weather">
                   Прогноз Погоды
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/Capital/CapitalPage.jsx">Столица</Link>
+                <Link to="/capital">Столица</Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/UfaOfChildhood/UfaOfChildhoodPage.jsx">
+                <Link to="/ufa-of-childhood">
                   Уфа-столица детства
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
+                <Link to="/">
                   Телемарафон
                 </Link>
               </DropdownStyleLink>
