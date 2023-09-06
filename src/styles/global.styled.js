@@ -1,14 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyled = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
     html,body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
-    scroll-behavior: smooth;
-    scroll-padding-top: 0px; /* Высота вашей фиксированной шапки, если таковая имеется */
     margin: 0;
-    padding: 0;
     }
     body {
     position: relative;
@@ -18,4 +15,4 @@ const GlobalStyled = createGlobalStyle`
     font-family: 'Raleway', 'Inter', Open Sans;
   }
 `;
-export default GlobalStyled;
+export default GlobalStyles
