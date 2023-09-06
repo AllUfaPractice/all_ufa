@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyled = createGlobalStyle`
     html,body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -15,4 +15,4 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Raleway', 'Inter', Open Sans;
   }
 `;
-export default GlobalStyles
+export default GlobalStyled
