@@ -4,7 +4,7 @@ import React from "react";
 import { AppRoutes } from "./Router";
 import ScrollToTop from "./Scripts/ScrollToTop";
 //Styles
-import { theme } from "../src/Styles/theme";
+import theme from "./Styles/theme"
 import { ThemeProvider } from "@mui/material";
 import GlobalStyled from "./Styles/global.styled";
 import { CssBaseline } from "@mui/material";
