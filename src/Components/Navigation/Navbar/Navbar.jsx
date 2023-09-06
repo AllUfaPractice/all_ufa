@@ -56,7 +56,7 @@ const Navbar = () => {
           <FaYoutube />
         </Link>
       </NavbarSocialLinks>
-    </NavbarStyle>g
+    </NavbarStyle>
   );
 };
 
