@@ -114,7 +114,7 @@ export const InfoStyle = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-
+  
   .InfoText {
     display: grid;
     grid-template-columns: 0.01fr 1fr;
@@ -337,9 +337,9 @@ export const TariffStyle = styled.div`
   }
   .Text {
     color: black;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 900;
-    margin: 30px 0;
+    margin: 15px 0;
   }
   .MainContText {
     font-family: serif;
@@ -493,6 +493,7 @@ export const TariffStyle = styled.div`
         border-left: solid gray 1px;
   `}
 `;
+
 export const FirstContTariff = styled.div`
   display: grid;
   grid-template-columns: 1fr 0.6fr;
@@ -505,7 +506,7 @@ export const FirstContTariff = styled.div`
     background-color: white;
     border-radius: 0 60px 60px 0;
     width: 95%;
-    padding: 8% 15% 8% 7%;
+    padding: 3% 8% 3% 7%;
   }
 
   /* Decktop 1920 */
@@ -559,6 +560,7 @@ export const FirstContTariff = styled.div`
       }
     `}
 `;
+
 export const SecondContTariff = styled.div`
   display: grid;
   grid-template-columns: 1fr 0.6fr;
@@ -572,7 +574,7 @@ export const SecondContTariff = styled.div`
     background-color: white;
     border-radius: 0 60px 60px 0;
     width: 95%;
-    padding: 8% 0% 8% 7%;
+    padding: 3% 0% 3% 7%;
   }
   /* Decktop 1920 */
   ${(props) =>
@@ -633,6 +635,7 @@ export const SecondContTariff = styled.div`
       }
     `}
 `;
+
 export const ThirdContTariff = styled.div`
   display: grid;
   grid-template-columns: 1fr 0.6fr;
@@ -670,7 +673,7 @@ export const ThirdContTariff = styled.div`
     background-color: white;
     border-radius: 0 60px 60px 0;
     width: 95%;
-    padding: 8% 0% 8% 7%;
+    padding: 3% 0% 3% 7%;
   }
 
   /* Decktop 1920 */
