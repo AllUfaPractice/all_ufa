@@ -32,27 +32,27 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </Link>
       </NavbarLogoStyle>
-      <NavbarLinks largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
-        <Button><Link to="/">Наш сайт</Link></Button>
+      <NavbarLinks largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={"display: none"} mobile={isMobile}>
+        <Button><Link to="https://allufa.ru/">Наш сайт</Link></Button>
         <ModalButton/>  
         <Button><Link to="#">О нас</Link></Button>
       </NavbarLinks>
       
       <NavbarSocialLinks largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
         {/* WhatsApp */}
-        <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
+        <Link to="/">
           <FaWhatsapp></FaWhatsapp>
         </Link>
         {/* VK */}
-        <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
+        <Link to="https://vk.com/allufa_ru">
           <FaVk />
         </Link>
         {/* Telegram */}
-        <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
+        <Link to="/">
           <FaTelegramPlane />
         </Link>
         {/* Youtube */}
-        <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
+        <Link to="https://www.youtube.com/channel/UCJDJaiMm9F_7wwmUc4JhJUQ">
           <FaYoutube />
         </Link>
       </NavbarSocialLinks>
