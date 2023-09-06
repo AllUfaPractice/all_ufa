@@ -5,7 +5,10 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px; /* Высота вашей фиксированной шапки, если таковая имеется */
     margin: 0;
+    padding: 0;
     }
     body {
     position: relative;
@@ -15,4 +18,4 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Raleway', 'Inter', Open Sans;
   }
 `;
-export default GlobalStyles
+export default GlobalStyles;

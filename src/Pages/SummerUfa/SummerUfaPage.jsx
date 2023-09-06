@@ -18,6 +18,7 @@ import SummerUfaImage from "../../Images/SummerUfaImage.png";
 import { useMediaQuery } from "@mui/material";
 
 const SummerUfaPage = () => {
+  
   const isLargeDesktop = useMediaQuery((theme) => theme.breakpoints.up("xl"));
   const isDesktop = useMediaQuery((theme) =>
     theme.breakpoints.between("lg", "xl")
