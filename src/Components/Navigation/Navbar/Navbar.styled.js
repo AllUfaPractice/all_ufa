@@ -93,7 +93,7 @@ export const NavbarLogoStyle = styled.div`
     `}
 `;
 
-export const NavbarLinks = styled.a`
+export const NavbarLinks = styled.div`
   ${(props) =>
     props.largedesktop &&
     css`
