@@ -19,7 +19,7 @@ export const NameStyle = styled.div`
   align-items: center;
   justify-items: center;
   padding-top: 12%;
-  height: 1100px;
+  height: 1200px;
   img {
     width: 65%;
     position: absolute;
@@ -41,7 +41,7 @@ export const NameStyle = styled.div`
   ${(props) =>
     props.Desktop &&
     css`
-      height: 700px;
+      height: 900px;
       padding-top: 15%;
       img {
         width: 60%;
@@ -116,13 +116,14 @@ ${(props) =>
 
 export const InfoStyle = styled.div`
   display: grid;
-  grid-template-columns: 1fr 0.6fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
 
   .InfoTextCont {
     background-color: white;
-    padding: 5% 20% 3% 10%;
-    border-radius: 0 0 50px 0;
-    width: 100%;
+    padding: 5%;
+    border-radius: 125px;
+    width: 90%;
   }
   .InfoContText {
     display: grid;
@@ -130,21 +131,14 @@ export const InfoStyle = styled.div`
     width: 80%;
   }
   .text {
-    font-size: 35px;
-    font-weight: 900;
-    margin-bottom: 40px;
-    text-align: justify;
-  }
-  .SecondText {
-    padding: 5% 0 0 7%;
     font-size: 40px;
     font-weight: 900;
+    margin-bottom: 40px;
   }
-  img {
-    display: block;
-    margin-left: auto;
-    width: 95%;
-    border-radius: 0 0 0 50%;
+  .SecondText {
+    padding: 3% 0 0 7%;
+    font-size: 45px;
+    font-weight: 900;
   }
 
   /* Decktop 1920 */
@@ -152,12 +146,12 @@ export const InfoStyle = styled.div`
     props.Desktop &&
     css`
       .text {
-        font-size: 28px;
-        margin-bottom: 20px;
+        font-size: 35px;
+        margin-bottom: 35px;
       }
       .SecondText {
         padding: 3% 0 0 7%;
-        font-size: 33px;
+        font-size: 40px;
         font-weight: 900;
       }
     `}
@@ -166,8 +160,8 @@ ${(props) =>
     props.Notebook &&
     css`
       .text {
-        font-size: 25px;
-        margin-bottom: 20px;
+        font-size: 30px;
+        margin-bottom: 30px;
       }
       .SecondText {
         padding: 3% 0 0 7%;
@@ -179,13 +173,16 @@ ${(props) =>
 ${(props) =>
     props.Tablet &&
     css`
+    .InfoTextCont{
+      border-radius: 50px;
+    }
       .text {
         font-size: 18px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
       }
       .SecondText {
         padding: 3% 0 0 7%;
-        font-size: 23px;
+        font-size: 26px;
         font-weight: 900;
       }
     `}
@@ -193,13 +190,16 @@ ${(props) =>
 ${(props) =>
     props.Mobile &&
     css`
+    .InfoTextCont{
+      border-radius: 40px;
+    }
       .text {
-        font-size: 8px;
-        margin-bottom: 10px;
+        font-size: 14px;
+        margin-bottom: 15px;
       }
       .SecondText {
         padding: 3% 0 0 7%;
-        font-size: 12px;
+        font-size: 18px;
         font-weight: 900;
       }
     `}
@@ -365,14 +365,14 @@ export const TariffStyle = styled.div`
   }
   .GridCont {
     display: grid;
-    grid-template-columns: 1fr 0.7fr;
+    grid-template-columns: 1fr 0.55fr;
     align-items: center;
     padding: 50px 0;
   }
 
   .ContText {
     display: grid;
-    grid-template-columns: 1fr 0.2fr;
+    grid-template-columns: 1fr 0.3fr;
     align-items: center;
     background-color: white;
     border-radius: 0 60px 60px 0;
@@ -385,7 +385,8 @@ export const TariffStyle = styled.div`
   }
   .Text {
     color: black;
-    font-size: 45px;
+    font-size: 40px;
+    font-weight: 900;
     margin: 30px 0;
   }
   .MainContText {
@@ -394,8 +395,18 @@ export const TariffStyle = styled.div`
     margin: auto;
   }
 
+  .MainSecondText{
+    font-size: 60px;
+    letter-spacing: 10px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-weight: 900;
+  }
+
   .TextTime {
     width: 70%;
+    text-align: center;
     padding: 10px;
     margin: auto 0;
     margin-left: 20%;
@@ -409,43 +420,32 @@ export const TariffStyle = styled.div`
     css`
       .MainText {
         font-size: 60px;
-        color: white;
-        text-align: center;
         margin: 100px 0;
+      }
+      .MainSecondText{
+        font-size: 45px;
       }
       .GridCont {
         display: grid;
         grid-template-columns: 1fr 0.7fr;
-        align-items: center;
         padding: 20px 0;
       }
 
       .ContText {
-        display: grid;
         grid-template-columns: 1fr 0.2fr;
-        align-items: center;
-        background-color: white;
         border-radius: 0 40px 40px 0;
-        width: 95%;
-        padding: 2% 2% 2% 7%;
-      }
-      .ContText li {
-        list-style-type: auto;
-        margin-right: 20px;
+        padding: 2% 4% 2% 7%;
       }
       .Text {
-        color: black;
         font-size: 30px;
         margin: 30px 0;
       }
       .MainContText {
-        font-family: serif;
         width: 75%;
-        margin: auto;
       }
 
       .TextTime {
-        width: 70%;
+        width: 100%;
         padding: 10px;
         margin: auto 0;
         margin-left: 20%;
@@ -458,44 +458,37 @@ export const TariffStyle = styled.div`
     props.Notebook &&
     css`
       .MainText {
-        font-size: 40px;
-        color: white;
-        text-align: center;
+        font-size: 45px;
         margin: 50px 0;
       }
       .GridCont {
-        display: grid;
         grid-template-columns: 1fr 0.7fr;
         align-items: center;
         padding: 20px 0;
       }
-
       .ContText {
-        display: grid;
         grid-template-columns: 1fr 0.2fr;
-        align-items: center;
-        background-color: white;
         border-radius: 0 40px 40px 0;
         width: 95%;
         padding: 2% 2% 2% 7%;
       }
       .ContText li {
-        list-style-type: auto;
         margin-right: 20px;
       }
       .Text {
-        color: black;
-        font-size: 20px;
-        margin: 30px 0;
+        font-size: 25px;
+        margin: 15px 0;
+      }
+      .MainSecondText{
+        font-size: 35px;
       }
       .MainContText {
-        font-family: serif;
         width: 75%;
         margin: auto;
       }
 
       .TextTime {
-        width: 70%;
+        width: 100%;
         padding: 10px;
         margin: auto 0;
         margin-left: 20%;
@@ -508,9 +501,7 @@ export const TariffStyle = styled.div`
     props.Tablet &&
     css`
       .MainText {
-        font-size: 25px;
-        color: white;
-        text-align: center;
+        font-size: 30px;
         margin: 50px 0;
       }
       .GridCont {
@@ -535,8 +526,12 @@ export const TariffStyle = styled.div`
       }
       .Text {
         color: black;
-        font-size: 10px;
-        margin: 20px 0;
+        font-size: 14px;
+        margin: 10px 0;
+      }
+      .MainSecondText{
+        font-size: 24px;
+        letter-spacing: 2px;
       }
       .MainContText {
         font-family: serif;
@@ -545,7 +540,7 @@ export const TariffStyle = styled.div`
       }
 
       .TextTime {
-        width: 70%;
+        width: 100%;
         padding: 10px;
         margin: auto 0;
         margin-left: 20%;
@@ -558,35 +553,32 @@ export const TariffStyle = styled.div`
     props.Mobile &&
     css`
       .MainText {
-        font-size: 18px;
-        color: white;
-        text-align: center;
+        font-size: 24px;
         margin: 15px 0;
       }
       .GridCont {
-        display: grid;
         grid-template-columns: 1fr 0.7fr;
         align-items: center;
         padding: 8px 0;
       }
 
       .ContText {
-        display: grid;
         grid-template-columns: 1fr 0.2fr;
-        align-items: center;
-        background-color: white;
         border-radius: 0 10px 10px 0;
         width: 95%;
         padding: 2% 5% 2% 7%;
       }
       .ContText li {
-        list-style-type: auto;
         margin-right: 20px;
       }
+
+      .MainSecondText{
+        font-size: 16px;
+        letter-spacing: 0px;
+      }
       .Text {
-        color: black;
         font-size: 10px;
-        margin: 20px 0;
+        margin: 6px 0;
       }
       .MainContText {
         font-family: serif;
@@ -595,7 +587,7 @@ export const TariffStyle = styled.div`
       }
 
       .TextTime {
-        width: 70%;
+        width: 100%;
         padding: 10px;
         margin: auto 0;
         margin-left: 20%;
@@ -692,7 +684,7 @@ export const CommunicationStyle = styled.div`
         font-weight: 600;
       }
       .Text {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 800;
         text-align: end;
         margin: 20px 0;
@@ -707,13 +699,14 @@ export const CommunicationStyle = styled.div`
         grid-template-columns: 0.40fr 1fr;
         border-radius: 25px 0 0 25px;
         padding: 3% 3% 3% 5%;
+        width: 90%;
       }
       .MainText {
         font-size: 14px;
         font-weight: 600;
       }
       .Text {
-        font-size: 8px;
+        font-size: 10px;
         font-weight: 800;
         text-align: end;
         margin: 10px 0;

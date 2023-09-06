@@ -70,24 +70,27 @@ ${(props) =>
 ${(props) =>
     props.Tablet &&
     css`
-      grid-template-columns: 0.6fr 1fr;
-      height: 400px;
+      grid-template-columns: 1fr;
+      height: 450px;
+      .emptycont {
+        display: none;
+      }
       img {
+        position: static;
         width: 80%;
-        left: -13%;
       }
       .ContText {
-        padding: 30px 35px 30px 40px;
+        background: none;
+        display: none;
       }
       p {
-        font-size: 30px;
+        display: none;
       }
     `}
 /* Mobile 600*/
 ${(props) =>
     props.Mobile &&
     css`
-      display: grid;
       grid-template-columns: 1fr;
       height: 250px;
       .emptycont {
@@ -109,27 +112,21 @@ ${(props) =>
 
 export const InfoStyle = styled.div`
   display: grid;
-  grid-template-columns: 1fr 0.6fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
 
   .InfoText {
     display: grid;
     grid-template-columns: 0.01fr 1fr;
     background-color: white;
     width: 90%;
-    padding: 5% 25% 0 10%;
-    border-radius: 0 0 50px 0;
+    padding: 5%;
+    border-radius: 125px;
   }
   .text {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 900;
     margin-bottom: 40px;
-    text-align: justify;
-  }
-  img {
-    display: block;
-    margin-left: auto;
-    width: 95%;
-    border-radius: 0 0 0 50%;
   }
 
   /* Decktop 1920 */
@@ -137,8 +134,8 @@ export const InfoStyle = styled.div`
     props.Desktop &&
     css`
       .text {
-        font-size: 28px;
-        margin-bottom: 20px;
+        font-size: 35px;
+        margin-bottom: 35px;
       }
     `}
   /* Notebook 1280*/
@@ -146,25 +143,34 @@ ${(props) =>
     props.Notebook &&
     css`
       .text {
-        font-size: 25px;
-        margin-bottom: 20px;
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+      .InfoText{
+        border-radius: 90px;
       }
     `}
 /* Tablet 960*/
 ${(props) =>
     props.Tablet &&
     css`
+      .InfoText {
+        border-radius: 50px;
+      }
       .text {
         font-size: 18px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
       }
     `}
 /* Mobile 600*/
 ${(props) =>
     props.Mobile &&
     css`
+    .InfoText {
+        border-radius: 40px;
+      }
       .text {
-        font-size: 8px;
+        font-size: 14px;
         margin-bottom: 15px;
       }
     `}
@@ -331,14 +337,22 @@ export const TariffStyle = styled.div`
   }
   .Text {
     color: black;
-    font-size: 45px;
+    font-size: 40px;
+    font-weight: 900;
     margin: 30px 0;
-    text-align: justify;
   }
   .MainContText {
     font-family: serif;
     width: 75%;
     margin: auto;
+  }
+  .MainSecondText{
+    font-size: 60px;
+    letter-spacing: 10px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-weight: 900;
   }
 
   .TextTime {
@@ -359,6 +373,9 @@ export const TariffStyle = styled.div`
         font-size: 60px;
         margin: 100px 0;
       }
+      .MainSecondText{
+        font-size: 45px;
+      }
       .MainContText {
         font-family: serif;
         width: 75%;
@@ -366,8 +383,8 @@ export const TariffStyle = styled.div`
       }
       .Text {
         color: black;
-        font-size: 30px;
-        margin: 30px 0;
+        font-size: 35px;
+        margin: 15px 0;
       }
       .TextTime {
         width: 70%;
@@ -394,13 +411,17 @@ export const TariffStyle = styled.div`
       }
       .Text {
         color: black;
-        font-size: 20px;
+        font-size: 25px;
         margin: 15px 0;
+      }
+      .MainSecondText{
+        font-size: 35px;
+        letter-spacing: 7xpx;
       }
       .TextTime {
         width: 70%;
         height: 80px;
-        padding: 40px 0;
+        padding: 0;
         margin: auto 0;
         margin-left: 20%;
         text-align: center;
@@ -422,13 +443,17 @@ export const TariffStyle = styled.div`
       }
       .Text {
         color: black;
-        font-size: 16px;
+        font-size: 14px;
         margin: 10px 0;
+      }
+      .MainSecondText{
+        font-size: 24px;
+        letter-spacing: 2px;
       }
       .TextTime {
         width: 70%;
         height: 30px;
-        padding: 40px 0;
+        padding: 0 0 0 5px;
         margin: auto 0;
         margin-left: 20%;
         text-align: center;
@@ -451,15 +476,19 @@ export const TariffStyle = styled.div`
       }
       .Text {
         color: black;
-        font-size: 6px;
+        font-size: 10px;
         margin: 6px 0;
+      }
+      .MainSecondText{
+        font-size: 16px;
+        letter-spacing: 0px;
       }
       .TextTime {
         width: 70%;
-        height: 15px;
-        padding: 20px 0;
+        height: 35px;
+        padding: 0 0 0 5px;
         margin: auto 0;
-        margin-left: 20%;
+        margin-left: 0;
         text-align: center;
         border-left: solid gray 1px;
   `}
@@ -475,7 +504,7 @@ export const FirstContTariff = styled.div`
     grid-template-columns: 0.01fr 1fr;
     background-color: white;
     border-radius: 0 60px 60px 0;
-    width: 80%;
+    width: 95%;
     padding: 8% 15% 8% 7%;
   }
 
@@ -488,7 +517,6 @@ export const FirstContTariff = styled.div`
         grid-template-columns: 0.01fr 1fr;
         background-color: white;
         border-radius: 0 60px 60px 0;
-        width: 80%;
         padding: 4% 15% 4% 7%;
       }
     `}
@@ -501,7 +529,6 @@ export const FirstContTariff = styled.div`
         grid-template-columns: 0.01fr 1fr;
         background-color: white;
         border-radius: 0 60px 60px 0;
-        width: 80%;
         padding: 2% 15% 2% 7%;
       }
     `}
@@ -515,7 +542,6 @@ export const FirstContTariff = styled.div`
         grid-template-columns: 0.01fr 1fr;
         background-color: white;
         border-radius: 0 40px 40px 0;
-        width: 80%;
         padding: 2% 15% 2% 7%;
       }
     `}
@@ -529,7 +555,6 @@ export const FirstContTariff = styled.div`
         grid-template-columns: 0.01fr 1fr;
         background-color: white;
         border-radius: 0 20px 20px 0;
-        width: 80%;
         padding: 0 15% 0 7%;
       }
     `}
@@ -803,7 +828,7 @@ export const CommunicationStyle = styled.div`
         font-weight: 600;
       }
       .Text {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 800;
         text-align: end;
         margin: 20px 0;
@@ -815,21 +840,20 @@ export const CommunicationStyle = styled.div`
     css`
       padding: 40px 0;
       .ContText {
-        grid-template-columns: 0.40fr 1fr;
+        grid-template-columns: 0.4fr 1fr;
         border-radius: 25px 0 0 25px;
         padding: 3% 3% 3% 5%;
+        width: 90%;
       }
       .MainText {
         font-size: 14px;
         font-weight: 600;
       }
       .Text {
-        font-size: 8px;
+        font-size: 10px;
         font-weight: 800;
         text-align: end;
         margin: 10px 0;
       }
     `}
 `;
-
-

@@ -15,7 +15,6 @@ import {
 
 //Image
 import BBMainImage from "../../Images/BBMainImage.png";
-import BBImage from "../../Images/BBImage.jpg";
 
 // NPM
 import { useMediaQuery } from "@mui/material";
@@ -85,7 +84,6 @@ const BabyBoomPage = () => {
           </p>
         </div>
         <div>
-          <img src={BBImage} />
         </div>
       </InfoStyle>
 
@@ -135,7 +133,7 @@ const BabyBoomPage = () => {
             <li className="Text"></li>
             <p className="Text">
               Размещение ЛОГО в анонсирующих роликах с озвучиванием генерального
-              спонсора программы ( 5 программ)
+              спонсора программы (5 программ)
             </p>
             <li className="Text"></li>
             <p className="Text">
@@ -152,7 +150,7 @@ const BabyBoomPage = () => {
               Участие в формате гостя в прямом эфире (15-20 мин)
             </p>
           </div>
-          <p className="MainText MainContText">
+          <p className="MainSecondText MainContText">
             Генеральный партнер телемарафона
           </p>
         </FirstContTariff>
@@ -170,7 +168,7 @@ const BabyBoomPage = () => {
             </p>
             <p className="Text TextTime">До 15 минут</p>
           </div>
-          <p className="MainText MainContText">Гость в студии</p>
+          <p className="MainSecondText MainContText">Гость в студии</p>
         </SecondContTariff>
         <ThirdContTariff
           Desktop={isDesktop}
@@ -182,7 +180,6 @@ const BabyBoomPage = () => {
             <li className="Text ContGridOne"></li>
             <p className="Text ContGridTwo">
               Размещение ЛОГО в анонсирующих роликах с озвучиванием генерального
-              спонсора программы ( 5 программ)
             </p>
             <li className="Text ContGridThree"></li>
             <p className="Text ContGridFour">
@@ -196,7 +193,7 @@ const BabyBoomPage = () => {
             </p>
             <p className="Text TextTime ContGridSeven">От 3 до 5 минут</p>
           </div>
-          <p className="MainText MainContText">
+          <p className="MainSecondText MainContText">
             Видеосюжет о Вашем товаре и услуге в праздничном формате
           </p>
         </ThirdContTariff>
