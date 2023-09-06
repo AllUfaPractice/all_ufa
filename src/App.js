@@ -6,8 +6,8 @@ import ScrollToTop from "./Scripts/ScrollToTop";
 //Styles
 import { ThemeProvider } from "@mui/material";
 import { CssBaseline } from "@mui/material";
-import theme from "./Styles/theme"
-import GlobalStyled from "./Styles/global.styled";
+import theme from "./styles/theme";
+import GlobalStyled from "./styles/global.styled"
 //Components
 import "./App.css";
 import ScrollButton from "./Components/Buttons/ScrollButton/ScrollButton";
