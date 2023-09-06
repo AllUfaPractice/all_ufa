@@ -56,6 +56,7 @@ export const NavbarStyle = styled.nav`
 `;
 
 export const NavbarLogoStyle = styled.div`
+  user-select: none;
   ${(props) =>
     props.largedesktop &&
     css`
