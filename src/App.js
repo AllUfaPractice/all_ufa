@@ -1,13 +1,15 @@
+//npm
 import { MemoryRouter as Router } from "react-router-dom";
 import React from "react";
-import "./App.css";
 import { AppRoutes } from "./Router";
+import ScrollToTop from "./Scripts/ScrollToTop";
 //Styles
 import { theme } from "../src/Styles/theme";
 import { ThemeProvider } from "@mui/material";
 import GlobalStyled from "./Styles/global.styled";
 import { CssBaseline } from "@mui/material";
-import ScrollToTop from "./Scripts/ScrollToTop";
+//Components
+import "./App.css";
 import ScrollButton from "./Components/Buttons/ScrollButton/ScrollButton";
 
 export default function App() {
