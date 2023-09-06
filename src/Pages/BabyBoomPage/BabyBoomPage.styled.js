@@ -8,7 +8,7 @@ export const BBPageStyle = styled.div`
     font-family: Raleway, sans-serif;
     font-weight: 0;
   }
-
+  background-color: rgb(19, 69, 41);
 `;
 export const NameStyle = styled.div`
   display: grid;
@@ -114,6 +114,7 @@ export const InfoStyle = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  
   .InfoText {
     display: grid;
     grid-template-columns: 0.01fr 1fr;

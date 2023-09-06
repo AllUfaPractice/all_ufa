@@ -1,0 +1,7 @@
+export const Name = styled.p`
+   ${(props) => props.largedesktop && css``}
+   ${(props) => props.desktop && css``}
+   ${(props) => props.notebook && css``}
+   ${(props) => props.tablet && css``}
+   ${(props) => props.mobile && css``}
+`;
