@@ -27,8 +27,6 @@ export const DropdownStyleModal = styled.div`
   width: 90%;
 `;
 
-export const DropdownStyleLinkIcon = styled.a``;
-
 export const DropdownStyleLink = styled.a`
   a {
     height: 100%;
