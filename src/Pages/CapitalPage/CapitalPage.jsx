@@ -12,7 +12,6 @@ import {
 
 // Image
 import CapitalMainImage from "../../Images/CapitalMainImage.png";
-import CapitalImgae from "../../Images/CapitaImage.jpg";
 
 // NPM
 import { useMediaQuery } from "@mui/material";
@@ -78,9 +77,6 @@ const CapitalPage = () => {
             Все программы дублируются ВК телеканала «Вся Уфа»
           </p>
         </div>
-        <div>
-          <img src={CapitalImgae} />
-        </div>
       </InfoStyle>
 
       <ReleaseStyle
@@ -124,7 +120,7 @@ const CapitalPage = () => {
             </p>
             <p className="Text TextTime">До 15 минут</p>
           </div>
-          <p className="MainText MainContText">Гость в студии</p>
+          <p className="MainSecondText MainContText">Гость в студии</p>
         </div>
 
         <div className="GridCont">
@@ -132,7 +128,7 @@ const CapitalPage = () => {
             <p className="Text">Сюжет о Вашей компании</p>
             <p className="Text TextTime">До 2,5 Минут</p>
           </div>
-          <p className="MainText MainContText">Горячие новости</p>
+          <p className="MainSecondText MainContText">Горячие новости</p>
         </div>
 
         <div className="GridCont">
@@ -140,7 +136,7 @@ const CapitalPage = () => {
             <p className="Text">Акции, новости Вашей компании</p>
             <p className="Text TextTime">До 30 сек</p>
           </div>
-          <p className="MainText MainContText">Акции, новости Вашей компании</p>
+          <p className="MainSecondText MainContText">Акции, новости Вашей компании</p>
         </div>
 
         <div className="GridCont">
@@ -151,7 +147,7 @@ const CapitalPage = () => {
             </p>
             <p className="Text"></p>
           </div>
-          <p className="MainText MainContText">
+          <p className="MainSecondText MainContText">
             Скрытая реклама (Product placement)
           </p>
         </div>

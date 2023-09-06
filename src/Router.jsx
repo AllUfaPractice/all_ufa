@@ -3,7 +3,7 @@ import React from 'react';
 //Pages
 import MainPage from "./Pages/MainPage/MainPages";
 import BabyBoomPage from "./Pages/BabyBoomPage/BabyBoomPage";
-import CapitalPage from "./Pages/Capital/CapitalPage";
+import CapitalPage from "./Pages/CapitalPage/CapitalPage";
 import WeatherPage from "./Pages/WeatherPage/WeatherPage";
 import CookingShowPPage from "./Pages/CookingShowPage/CookingShowPage";
 import SummerUfaPage from "./Pages/SummerUfa/SummerUfaPage";
