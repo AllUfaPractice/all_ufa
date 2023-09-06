@@ -1,7 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { ScrollButtonWrapper } from "./ScrollButton.styled";
+import { useMediaQuery } from "@mui/material";
 
 const ScrollButton = () => {
+
+  const isLargeDesktop = useMediaQuery((theme) => theme.breakpoints.up("xl"));
+  const isDesktop = useMediaQuery((theme) => theme.breakpoints.between("lg", "xl"));
+  const isNotebook = useMediaQuery((theme) => theme.breakpoints.between("md", "lg"));
+  const isTablet = useMediaQuery((theme) => theme.breakpoints.between("sm", "md"));
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -29,7 +37,9 @@ const ScrollButton = () => {
   }, []);
 
   return (
-    <ScrollButtonWrapper
+    <ScrollButtonWrapper 
+      tablet={isTablet} 
+      mobile={isMobile}
       isVisible={isVisible}
       onClick={scrollToTop}
       title="Вернуться наверх"
