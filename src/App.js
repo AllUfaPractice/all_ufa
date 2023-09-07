@@ -7,16 +7,13 @@ import ScrollToTop from "./Scripts/ScrollToTop";
 import { ThemeProvider } from "@mui/material";
 import { CssBaseline } from "@mui/material";
 import theme from "./styles/theme";
-import GlobalStyled from "./styles/global.styled"
 //Components
-import "./App.css";
 import ScrollButton from "./Components/Buttons/ScrollButton/ScrollButton";
 
 export default function App() {
-  return (
+  return (  
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <GlobalStyled />
       <ScrollButton />
       <Router>
         <ScrollToTop>
