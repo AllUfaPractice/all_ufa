@@ -1,5 +1,5 @@
 //npm
-import { MemoryRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import React from "react";
 import { AppRoutes } from "./Router";
 import ScrollToTop from "./Scripts/ScrollToTop";
