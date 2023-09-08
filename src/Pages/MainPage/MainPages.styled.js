@@ -1,46 +1,81 @@
 import styled from "styled-components";
-import BGImg from "../../Images/MainPageFirstSlideBackgroud.jpg"
+import { css } from "styled-components";
+import BGImg from "../../Images/MainPageFirstSlideBackgroud.jpg";
 
-export const MainPageStyle = styled('div')(() => ({
-  margin: '0',
-  padding: '0',
-  fontFamily: 'Raleway, sans-serif',
-  fontWeight: '0',
-}))
+export const MainPageStyle = styled.div`
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "PT sans", sans-serif;
+  }
+`;
 
-export const UTPSlide = styled('div')(() => ({
-  height: '100vh',
-  width: '100%',
-  padding: '0',
-  margin: '0',
+export const UTPSlide = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.9fr 0.3fr;
+  justify-items: center;
+  height: 100vh;
+  background-image: url(${BGImg});
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 
-  backgroundImage: `url(${BGImg})`,
-  backgroundPosition: 'center',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
+  h1 {
+    color: white;
+    font-size: 110px;
+    text-align: center;
+    align-self: end;
+    font-weight: 400;
+  }
+  h2 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+  }
 
-  display: "grid",
-  gridTemplateRows: "1fr 1fr 0.3fr",
-  alignItems: "end",
-  justifyContent: "center",
-
-  "& h1, & h2": {
-    color: "white",
-    textAlign: "center",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    fontWeight: "400",
-    width: "100%",
-  },
-
-  "& h1": {
-    gridColumn: "1/3",
-    gridRow: "1/2",
-  },
-
-  "& h2": {
-    gridColumn: "1/3",
-    gridRow: "2/3",
-  },
-}))
+  /* Decktop 1920 */
+  ${(props) =>
+    props.Desktop &&
+    css`
+      h1 {
+        font-size: 70px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+    `}
+  /* Notebook 1280*/
+${(props) =>
+    props.Notebook &&
+    css`
+      h1 {
+        font-size: 55px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+    `}
+/* Tablet 960*/
+${(props) =>
+    props.Tablet &&
+    css`
+      h1 {
+        font-size: 45px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+    `}
+/* Mobile 600*/
+${(props) =>
+    props.Mobile &&
+    css`
+      h1 {
+        font-size: 38px;
+      }
+      h2 {
+        font-size: 14px;
+      }
+    `}
+`;

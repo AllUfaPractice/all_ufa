@@ -14,12 +14,9 @@ export const CapitalPageStyle = styled.div`
 export const NameStyle = styled.div`
   display: grid;
   grid-template-columns: 0.8fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  align-items: center;
   justify-items: center;
   padding-top: 12%;
-  height: 1200px;
+  height: 100vh;
   img {
     width: 65%;
     position: absolute;
