@@ -18,26 +18,14 @@ import { useMediaQuery } from "@mui/material";
 
 const CapitalPage = () => {
   const isLargeDesktop = useMediaQuery((theme) => theme.breakpoints.up("xl"));
-  const isDesktop = useMediaQuery((theme) =>
-    theme.breakpoints.between("lg", "xl")
-  );
-  const isNotebook = useMediaQuery((theme) =>
-    theme.breakpoints.between("md", "lg")
-  );
-  const isTablet = useMediaQuery((theme) =>
-    theme.breakpoints.between("sm", "md")
-  );
+  const isDesktop = useMediaQuery((theme) => theme.breakpoints.between("lg", "xl"));
+  const isNotebook = useMediaQuery((theme) => theme.breakpoints.between("md", "lg"));
+  const isTablet = useMediaQuery((theme) =>theme.breakpoints.between("sm", "md"));
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   return (
     <CapitalPageStyle>
       <HamburgerMenu />
-      <NameStyle
-        LargeDesktop={isLargeDesktop}
-        Desktop={isDesktop}
-        Notebook={isNotebook}
-        Tablet={isTablet}
-        Mobile={isMobile}
-      >
+      <NameStyle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
         <div className="emptycont"></div>
         <img src={CapitalMainImage} />
         <div className="ContText">

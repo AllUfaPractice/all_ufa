@@ -20,27 +20,15 @@ import { useMediaQuery } from "@mui/material";
 const SummerUfaPage = () => {
   
   const isLargeDesktop = useMediaQuery((theme) => theme.breakpoints.up("xl"));
-  const isDesktop = useMediaQuery((theme) =>
-    theme.breakpoints.between("lg", "xl")
-  );
-  const isNotebook = useMediaQuery((theme) =>
-    theme.breakpoints.between("md", "lg")
-  );
-  const isTablet = useMediaQuery((theme) =>
-    theme.breakpoints.between("sm", "md")
-  );
+  const isDesktop = useMediaQuery((theme) => theme.breakpoints.between("lg", "xl"));
+  const isNotebook = useMediaQuery((theme) => theme.breakpoints.between("md", "lg"));
+  const isTablet = useMediaQuery((theme) =>theme.breakpoints.between("sm", "md"));
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   
   return (
     <SummerUfaPageStyle>
       <HamburgerMenu />
-      <NameStyle
-        LargeDesktop={isLargeDesktop}
-        Desktop={isDesktop}
-        Notebook={isNotebook}
-        Tablet={isTablet}
-        Mobile={isMobile}
-      >
+      <NameStyle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
         <div className="ImageCont">
         <img src={SummerUfaMainImage} />
         </div>
