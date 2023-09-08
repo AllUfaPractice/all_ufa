@@ -11,7 +11,7 @@ import theme from "./styles/theme";
 import ScrollButton from "./Components/Buttons/ScrollButton/ScrollButton";
 
 export default function App() {
-  return (  
+  return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <ScrollButton />

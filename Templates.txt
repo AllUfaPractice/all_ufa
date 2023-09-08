@@ -1,3 +1,16 @@
+import {
+  MyGlobalStyles,
+  Slide,
+  MainTitleText,
+  InformationContainer,
+  InformationText,
+  SecondTitleText,
+  ThirdTitleText,
+  SheduleText,
+  TariffText,
+  TariffTimeText,
+} from "../../styles/global.styled";
+
 export const Name = styled.p`
    ${(props) => props.largedesktop && css``}
    ${(props) => props.desktop && css``}
@@ -5,3 +18,19 @@ export const Name = styled.p`
    ${(props) => props.tablet && css``}
    ${(props) => props.mobile && css``}
 `;
+
+export const FirstSlide = styled(Slide)`
+   ${(props) => props.largedesktop && css``}
+   ${(props) => props.desktop && css``}
+   ${(props) => props.notebook && css``}
+   ${(props) => props.tablet && css``}
+   ${(props) => props.mobile && css``}
+`;
+
+  const isLargeDesktop = useMediaQuery((theme) => theme.breakpoints.up("xl"));
+  const isDesktop = useMediaQuery((theme) =>theme.breakpoints.between("lg", "xl"));
+  const isNotebook = useMediaQuery((theme) =>theme.breakpoints.between("md", "lg"));
+  const isTablet = useMediaQuery((theme) =>theme.breakpoints.between("sm", "md"));
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+
+  LargeDesktop={isLargeDesktop} Desktop={isDesktop} Notebook={isNotebook} Tablet={isTablet} Mobile={isMobile}
