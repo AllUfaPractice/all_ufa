@@ -33,14 +33,14 @@ export const Slide = styled.div`
     css`
       padding: 5vh 0 10vh 0;
       height: 100vh;
-      width: 100%;
+      width: 100vw;
     `}
   ${(props) =>
     (props.tablet || props.mobile) &&
     css`
       padding: 5vh 0;
       height: 100vh;
-      width: 100%;
+      width: 100vw;
     `}
 `;
 
@@ -52,34 +52,11 @@ export const MainTitleText = styled.h1`
   letter-spacing: 10px;
 
   ${(props) =>
-    props.largedesktop &&
-    css`
-      //font-size: 80px;
-    `}
-
-  ${(props) =>
-    props.desktop &&
-    css`
-      //font-size: 55px;
-    `}
-
-  ${(props) =>
-    props.notebook &&
-    css`
-      //font-size: 30px;
-    `}
-
-  ${(props) =>
-    props.tablet &&
+    (props.tablet || props.tablet) &&
     css`
       display: none;
     `}
 
-  ${(props) =>
-    props.mobile &&
-    css`
-      display: none;
-    `}
 `;
 
 export const InformationContainer = styled.div`
@@ -104,8 +81,6 @@ export const InformationContainer = styled.div`
     0px -10px 5px -5px rgba(0, 0, 0, 0.6);
   //Текст Выравнивание
   align-items: center;
-
-  ${(props) => (props.largedesktop || props.desktop || props.notebook) && css``}
 
   ${(props) =>
     props.largedesktop &&
