@@ -35,7 +35,7 @@ const Navbar = () => {
       <NavbarLinks largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={"display: none"} mobile={isMobile}>
         <Button><Link to="https://allufa.ru/">Наш сайт</Link></Button>
         <ModalButton/>  
-        <Button><Link to="#">О нас</Link></Button>
+        <Button><Link to="/About">О нас</Link></Button>
       </NavbarLinks>
       
       <NavbarSocialLinks largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>

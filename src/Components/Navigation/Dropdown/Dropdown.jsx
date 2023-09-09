@@ -71,8 +71,8 @@ const ModalButton = () => {
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
-                <Link to="/">
-                  Телемарафон
+                <Link to="/ticker">
+                  Бегущая строка
                 </Link>
               </DropdownStyleLink>
             </DropdownStyleModal>
