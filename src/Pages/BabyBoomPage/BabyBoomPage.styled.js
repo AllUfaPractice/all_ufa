@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { css } from "styled-components";
 import { Slide, SheduleText } from "../../styles/global.styled";
 
-//Первый слайд
+  //Первый слайд
 export const FirstSlide = styled(Slide)`
   //Выравнивание
   display: flex;
@@ -31,7 +31,7 @@ export const FirstSlide = styled(Slide)`
       }
     `}
 `;
-//Главный заголовок
+  //Главный заголовок
 export const MainTitle = styled.div`
   //Выравнивание
   z-index: -1;
@@ -55,7 +55,7 @@ export const MainTitle = styled.div`
       display: none;
     `}
 `;
-//Расписание область
+  //Расписание область
 export const SheduleSlide = styled(Slide)`
   margin-bottom: 10vh;
   height: auto;

@@ -11,6 +11,7 @@ import {
   TariffContainer,
 } from "./BabyBoomPage.styled";
 
+// Global Styles
 import {
   MyGlobalStyles,
   MainTitleText,

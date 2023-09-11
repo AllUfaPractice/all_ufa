@@ -4,6 +4,7 @@ import { css } from "styled-components";
 export const MyGlobalStyles = styled.div`
   margin: 0;
   padding: 0;
+  
   * {
     font-size: calc(1px + 1vw + 1vh);
   }
