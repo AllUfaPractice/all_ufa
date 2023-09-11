@@ -1,78 +1,103 @@
 import styled from "styled-components";
 import { css } from "styled-components";
+import {Slide, SheduleText,InformationContainer} from "../../styles/global.styled"
 
-// Image
-import BlackLine from "../../Images/BlackLine.jpg"
+export const FirstSlide = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px) saturate(110%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.6);
+    padding: 5vh 0px 10vh;
+    height: 100vh;
+    width: 100%;
 
-export const WeatherStyle = styled.div`
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: Raleway, sans-serif;
-  }
-  background-color: rgb(19, 69, 41);
+
+  ${(props) =>
+    (props.largedesktop || props.desktop || props.notebook) &&
+    css`
+      img {
+        border-radius:50% ;
+        height: calc(15vw + 15vw);
+        margin: calc(2.5vw + 2.5vw);
+        transform: translateX(20%);
+      }
+    `}
+  ${(props) =>
+    (props.tablet || props.mobile) &&
+    css`
+      img {
+        border-radius:50% ;
+        height: calc(40vw + 40vw);
+      }
+    `}
 `;
 
-export const NameStyle = styled.div`
-  display: grid;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  align-items: center;
-  justify-items: center;
-  padding-top: 10%;
-  height: 1100px;
+  export const InformationContainerExp = styled(InformationContainer)`
+  justify-content: start;
 
-  .ImageCont {
-    width: 100%;
-    display: grid;
-    background-image: url(${BlackLine});
-    background-repeat: repeat-x;
-    background-position: center;
-    background-size: 30%;
+  `;
+  //Главный заголовок
+  export const MainTitle = styled.div`
+  //Выравнивание
+  z-index: -1;
+  padding: 40px;
+  width: 100%;
+  //Фон
+  background-color: rgba(0, 30, 13, 0.9);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(0, 0, 0, 0.725);
+  -webkit-border-top-left-radius: 50px;
+  -webkit-border-bottom-left-radius: 50px;
+  -moz-border-radius-topleft: 50px;
+  -moz-border-radius-bottomleft: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+  //Текст
+  h1{
+    font-size:calc(1.25vw + 1.25vh);
   }
-  img {
-    width: 40%;
-    border-radius: 100%;
-    margin: 0 auto;
-  }
-  /* Decktop 1920 */
+
   ${(props) =>
-    props.Desktop &&
+    (props.tablet || props.mobile) &&
     css`
-      height: 680px;
-      padding-top: 15%;
-      img {
-        width: 35%;
-      }
+      display: none;
     `}
-  /* Notebook 1280*/
-${(props) =>
-    props.Notebook &&
-    css`
-      height: 500px;
-      padding-top: 15%;
-      img {
-        width: 35%;
-      }
-    `}
-/* Tablet 960*/
-${(props) =>
-    props.Tablet &&
-    css`
-      height: 450px;
-      padding-top: 0;
-      img {
-        width: 35%;
-      }
-    `}
-/* Mobile 600*/
-${(props) =>
-    props.Mobile &&
-    css`
-      height: 350px;
-      padding-top: 0;
-      img {
-        width: 50%;
-      }
-    `}
+`;
+  //Расписание область
+export const SheduleSlide = styled(Slide)`
+  
+  margin-bottom: 10vh;
+  height: auto;
+  //Фон
+  backdrop-filter: blur(5px) saturate(110%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.3);
+  //Тень
+  -webkit-box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.6),
+    0px -10px 5px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.6),
+    0px -10px 5px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.6),
+    0px -10px 5px -5px rgba(0, 0, 0, 0.6);
+`;
+//Расписание Ячейки
+export const Shedule = styled(SheduleText)`
+  //Выравнивание
+  grid-template-columns: repeat(3,1fr);
+
+  .TitleTime{
+     grid-area: 1 / 1 / 2 / 4; 
+  }
+`;
+//Область Тарифов
+export const TariffContainer = styled.p`
+  //Выравнивание
+  margin-bottom: 10vh;
 `;

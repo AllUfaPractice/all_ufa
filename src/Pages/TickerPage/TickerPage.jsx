@@ -5,7 +5,8 @@ import React from "react";
 // Styles
 import {
   FirstSlide,
-  MainTitle,
+  InformationContainerExp,
+  InformationTextExp,
   Shedule,
   SheduleSlide,
   TariffContainer,
@@ -51,14 +52,14 @@ const TickerPage = () => {
         <img src={TickerImage} alt="Летняя Уфа"></img>
       </FirstSlide>
 
-      <InformationContainer
+      <InformationContainerExp
         largedesktop={isLargeDesktop}
         desktop={isDesktop}
         notebook={isNotebook}
         tablet={isTablet}
         mobile={isMobile}
       >
-        <InformationText
+        <InformationTextExp
           largedesktop={isLargeDesktop}
           desktop={isDesktop}
           notebook={isNotebook}
@@ -80,8 +81,8 @@ const TickerPage = () => {
           <li>Культурными, научными, спортивными учреждениями</li>
           <li>Народными корреспондентами и горожанами</li>
           <li>Нашими друзьями и партнёрами</li>
-        </InformationText>
-      </InformationContainer>
+        </InformationTextExp>
+      </InformationContainerExp>
 
       <SheduleSlide
         largedesktop={isLargeDesktop}

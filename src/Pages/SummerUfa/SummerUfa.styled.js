@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { css } from "styled-components";
 import {Slide, SheduleText} from "../../styles/global.styled"
 
-// image
-import GreenLine from "../../Images/GreenLine.jpg";
 
 export const FirstSlide = styled.div`
   display: flex;
@@ -20,11 +18,6 @@ export const FirstSlide = styled.div`
     height: 100vh;
     width: 100%;
 
-    //background line
-    background-image: url(${GreenLine});
-    background-repeat: repeat-x;
-    background-position: center;
-    background-size: 40%;
   img{
     border-radius: 100%;   
   }
@@ -32,7 +25,7 @@ export const FirstSlide = styled.div`
     (props.largedesktop || props.desktop || props.notebook) &&
     css`
       img {
-        height: calc(15vw + 15vw);
+        height: calc(18vw + 18vw);
         margin: calc(2.5vw + 2.5vw);
       }
     `}

@@ -14,7 +14,6 @@ export const FirstSlide = styled.div`
   -webkit-box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.6);
-
     padding: 5vh 0px 10vh;
     height: 100vh;
     width: 100%;
