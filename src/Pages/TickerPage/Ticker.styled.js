@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { css } from "styled-components";
-import {Slide, SheduleText} from "../../styles/global.styled"
+import {Slide, SheduleText, InformationContainer,InformationText} from "../../styles/global.styled"
 
 
 export const FirstSlide = styled.div`
@@ -36,6 +36,18 @@ export const FirstSlide = styled.div`
     `}
 `;
 
+export const InformationContainerExp = styled(InformationContainer)`
+  height: 80vh;
+  margin: 10vh 5vw;
+`;
+export const InformationTextExp = styled(InformationText)`
+li{
+  margin: 2vh 0;
+}
+p{
+  margin: 3vh 0;
+}
+`;
   //Главный заголовок
   export const MainTitle = styled.div`
   //Выравнивание
@@ -81,6 +93,7 @@ export const SheduleSlide = styled(Slide)`
   box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.6),
     0px -10px 5px -5px rgba(0, 0, 0, 0.6);
 `;
+
 //Расписание Ячейки
 export const Shedule = styled(SheduleText)`
   //Выравнивание

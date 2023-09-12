@@ -3,9 +3,6 @@ import { css } from "styled-components";
 import {InformationContainer,InformationText} from "../../styles/global.styled"
 
 
-export const AboutPageStyle = styled.div`
-`;
-
 export const FirstSlide = styled.div`
   height: 100vh;
   background-color: white;
@@ -36,11 +33,13 @@ export const InformationContainerExp = styled(InformationContainer)`
       margin:15vh auto;
     `}
 `;
+
 export const InformationTextExp = styled(InformationText)`
 li{
   margin: 3vh 0;
 }
 `;
+
 export const UsSlide = styled.div`
   display: grid;
   justify-items: center;

@@ -42,14 +42,31 @@ const SummerUfaPage = () => {
 
   return (
     <MyGlobalStyles>
-      <FirstSlide
+            <FirstSlide
         largedesktop={isLargeDesktop}
         desktop={isDesktop}
         notebook={isNotebook}
         tablet={isTablet}
         mobile={isMobile}
       >
-        <img src={SummerUfaMainImage} alt="Летняя Уфа"></img>
+        <img src={SummerUfaMainImage} alt="Столица"></img>
+        <MainTitle
+          largedesktop={isLargeDesktop}
+          desktop={isDesktop}
+          notebook={isNotebook}
+          tablet={isTablet}
+          mobile={isMobile}
+        >
+          <MainTitleText
+            largedesktop={isLargeDesktop}
+            desktop={isDesktop}
+            notebook={isNotebook}
+            tablet={isTablet}
+            mobile={isMobile}
+          >
+            Летняя Уфа
+          </MainTitleText>
+        </MainTitle>
       </FirstSlide>
 
       <InformationContainer
