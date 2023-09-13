@@ -9,7 +9,7 @@ import {
   ModalMainLinkStyle
 } from "./ProductsMenu.styled";
 import { Modal } from "@material-ui/core";
-import ModalMenuLogo from "../../Images/AboutImage.png";
+import ModalMenuLogo from "../../../Images/AboutImage.png";
 
 const ProductsMenu = () => {
   const [open, setOpen] = React.useState(false);

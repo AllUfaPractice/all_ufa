@@ -3,11 +3,11 @@ import React from "react";
 //Styles
 import { HeaderStyle, HeaderLogoStyle } from "./Header.styled";
 //Components
-import SocialButtons from "../Buttons/SocialButtons/SocialButtons";
-import { useMediaQuery } from "@mui/material";
+import SocialButtons from "../../Buttons/SocialButtons/SocialButtons";
 import ProductsMenu from "../ProductsMenu/ProductsMenu";
+import { useMediaQuery } from "@mui/material";
 //Imgs
-import HeaderLogo from "../../Images/WhiteLogo.png";
+import HeaderLogo from "../../../Images/WhiteLogo.png";
 
 const Header = () => {
     const isTablet = useMediaQuery((theme) => theme.breakpoints.between("sm", "md"));

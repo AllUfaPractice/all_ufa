@@ -97,8 +97,14 @@ const HamburgerMenu = () => {
         <ListItem button className={classes.listItem}>
           <Link className={classes.link} to="/cooking-show">Вкусно</Link>
         </ListItem>
+         <ListItem button className={classes.listItem}>
+          <Link className={classes.link} to="/weather">Прогноз погоды</Link>
+        </ListItem>
         <ListItem button className={classes.listItem}>
           <Link className={classes.link} to="/summer-ufa">Летняя Уфа</Link>
+        </ListItem>
+        <ListItem button className={classes.listItem}>
+          <Link className={classes.link} to="/cooking-show-vkusno">Вкусно</Link>
         </ListItem>
         <ListItem button className={classes.listItem}>
           <Link className={classes.link} to="/ufa-is-aware">Уфа в курсе</Link>
@@ -107,7 +113,10 @@ const HamburgerMenu = () => {
           <Link className={classes.link} to="/ufa-of-childhood">Столица детства</Link>
         </ListItem>
         <ListItem button className={classes.listItem}>
-          <Link className={classes.link} to="/weather">Прогноз погоды</Link>
+          <Link className={classes.link} to="/ticker">Бегущая строка</Link>
+        </ListItem>
+        <ListItem button className={classes.listItem}>
+          <Link className={classes.link} to="/about-us">О нас</Link>
         </ListItem>
       </List>
     </div>
