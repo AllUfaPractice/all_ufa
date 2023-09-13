@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { css } from "styled-components";
 
 export const HamburgerStyle = styled.nav`
+  display: fixed;
   ${(props) =>
     props.largedesktop &&
     css`
