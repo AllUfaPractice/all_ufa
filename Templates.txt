@@ -33,4 +33,4 @@ export const FirstSlide = styled(Slide)`
   const isTablet = useMediaQuery((theme) =>theme.breakpoints.between("sm", "md"));
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
-  LargeDesktop={isLargeDesktop} Desktop={isDesktop} Notebook={isNotebook} Tablet={isTablet} Mobile={isMobile}
+  largeDesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}

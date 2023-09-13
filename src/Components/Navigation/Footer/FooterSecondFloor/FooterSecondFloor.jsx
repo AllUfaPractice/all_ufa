@@ -32,20 +32,20 @@ const FooterSecondFloor = () => {
           Меню
         </FooterSecondFloorTitle>
         <FooterSecondFloorMenuLinks largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
-          <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">Главная</Link>
-          <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">О нас</Link>
-          <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">Детки БУМ!</Link>
-          <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">АФИША</Link>
-          <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
-            Бегущая строка
+          <Link to="/">Главная</Link>
+          <Link to="/about-us">О нас</Link>
+          <Link to="/baby-boom">Детки БУМ!</Link>
+          <Link to="/capital">Столица</Link>
+          <Link to="/weather">
+            Прогноз погоды
           </Link>
-          <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">Летняя Уфа</Link>
-          <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
-            Прогноз Погоды
+          <Link to="/cooking-show-vkusno">Вкусно</Link>
+          <Link to="/summer-ufa">
+            Летняя Уфа
           </Link>
-          <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">Столица</Link>
-          <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">Телегазета</Link>
-          <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">Телемарафон</Link>
+          <Link to="/ufa-is-aware">Уфа в курсе</Link>
+          <Link to="/ufa-of-childhood">Столица детства</Link>
+          <Link to="/ticker">Бегущая строка</Link>
         </FooterSecondFloorMenuLinks>
       </FooterSecondFloorMenu>
 

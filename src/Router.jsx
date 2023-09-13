@@ -12,24 +12,26 @@ import UfaOfChildhoodPage from "./Pages/UfaOfChildhood/UfaOfChildhoodPage";
 import TickerPage from './Pages/TickerPage/TickerPage';
 import  AboutPage  from './Pages/AboutPage/AboutPage';
 //Components
-import Navbar from "./Components/Navigation/Navbar/Navbar";
 import Footer from "./Components/Navigation/Footer/Footer";
+import Header from './Components/Header/Header';
+import HamburgerMenu from './Components/Navigation/HamburgerMenu/HamburgerMenu';
 
 export const AppRoutes = () => (
   <>
-    <Navbar />
-
+    <Header/>
+    <HamburgerMenu/>
+    
     <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/baby-boom" element={<BabyBoomPage />} />
       <Route path="/capital" element={<CapitalPage />} />
       <Route path="/weather" element={<WeatherPage />} />
-      <Route path="/cooking-show" element={<CookingShowPPage />} />
+      <Route path="/cooking-show-vkusno" element={<CookingShowPPage />} />
       <Route path="/summer-ufa" element={<SummerUfaPage />} />
       <Route path="/ufa-is-aware" element={<UfaIsAwarePage />} />
       <Route path="/ufa-of-childhood" element={<UfaOfChildhoodPage />} />
       <Route path="/ticker" element={<TickerPage/>} /> 
-      <Route path="/About" element={<AboutPage />} />
+      <Route path="/about-us" element={<AboutPage />} />
     </Routes>
 
     <Footer />
