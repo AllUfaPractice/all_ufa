@@ -48,12 +48,11 @@ export const UsSlide = styled.div`
     color: white;
   }
 `;
+
 export const UsSlideCont = styled.div`  
+   background-color: rgba(3, 35, 18, 0.55);
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(5, 41, 20, 0.8);
-  -webkit-border-top-left-radius: 12px;
-  -webkit-border-bottom-left-radius: 12px;
   border-radius: 1;
   border: 1px solid rgba(255, 255, 255, 0.125);
   width: 85%;

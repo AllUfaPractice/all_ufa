@@ -12,7 +12,6 @@ import {
 } from "./UfaIsAware.styled";
 
 // Global Styles
-
 import {
   MyGlobalStyles,
   MainTitleText,

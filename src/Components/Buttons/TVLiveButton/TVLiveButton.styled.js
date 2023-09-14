@@ -3,13 +3,13 @@ import { css } from "styled-components";
 
 export const TVLiveButtonStyle = styled.a`
   .TVButton {
-    width: 400px;
-    height: 100px;
+    width: calc(6.6vh + 12.4vw);
+    height: 5vh;
     background-color: rgba(0, 30, 13, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 70px;
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
     background: -webkit-linear-gradient(
       90deg,
       rgb(0, 30, 13),
@@ -34,9 +34,7 @@ export const TVLiveButtonStyle = styled.a`
     ${(props) =>
       props.Desktop &&
       css`
-        width: 300px;
-        height: 75px;
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 48px;
       `}
 
@@ -44,8 +42,6 @@ export const TVLiveButtonStyle = styled.a`
     ${(props) =>
       props.Notebook &&
       css`
-        width: 180px;
-        height: 45px;
         font-size: 12px;
         border-radius: 28px;
       `}
@@ -54,9 +50,7 @@ export const TVLiveButtonStyle = styled.a`
     ${(props) =>
       props.Tablet &&
       css`
-        width: 150px;
-        height: 40px;
-        font-size: 11px;
+        font-size: 10px;
         border-radius: 26px;
       `}
 
@@ -64,9 +58,7 @@ export const TVLiveButtonStyle = styled.a`
     ${(props) =>
       props.Mobile &&
       css`
-        width: 140px;
-        height: 38px;
-        font-size: 9px;
+        font-size: 8px;
         border-radius: 25px;
       `}
   }
