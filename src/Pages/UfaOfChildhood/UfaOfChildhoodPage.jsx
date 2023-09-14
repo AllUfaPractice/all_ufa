@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../../Components/Navigation/Navbar/Navbar";
-import HamburgerMenu from "../../Components/Navigation/HamburgerMenu/HamburgerMenu";
 import {
   NameStyle,
   UfaIsAwarePageStyled,
@@ -23,10 +21,9 @@ const UfaOfChildhoodPage = () => {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   return (
     <UfaIsAwarePageStyled>
-      <HamburgerMenu />
       <NameStyle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
         <div className="ImageCont">
-          <img src={UfaOfChildhoodGif} />
+          <img src={UfaOfChildhoodGif} alt=""/>
         </div>
       </NameStyle>
 
@@ -49,7 +46,7 @@ const UfaOfChildhoodPage = () => {
           </div>
         </div>
         <div>
-          <img src={UfaOfChildhoodImage} />
+          <img src={UfaOfChildhoodImage} alt=""/>
         </div>
       </InfoStyle>
 

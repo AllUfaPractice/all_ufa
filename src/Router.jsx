@@ -13,7 +13,7 @@ import TickerPage from './Pages/TickerPage/TickerPage';
 import  AboutPage  from './Pages/AboutPage/AboutPage';
 //Components
 import Footer from "./Components/Navigation/Footer/Footer";
-import Header from './Components/Header/Header';
+import Header from './Components/Navigation/Header/Header';
 import HamburgerMenu from './Components/Navigation/HamburgerMenu/HamburgerMenu';
 
 export const AppRoutes = () => (
