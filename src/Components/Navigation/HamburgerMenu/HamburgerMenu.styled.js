@@ -2,23 +2,12 @@ import styled from "styled-components";
 import { css } from "styled-components";
 
 export const HamburgerStyle = styled.nav`
-  display: fixed;
+  z-index: 999;
+  width: 100vw;
+  position: fixed;
   ${(props) =>
-    props.largedesktop &&
+    (props.largedesktop || props.desktop || props.notebook) &&
     css`
       display: none;
     `}
-  ${(props) =>
-    props.desktop &&
-    css`
-      display: none;
-    `}
-  ${(props) =>
-    props.notebook &&
-    css`
-      display: none;
-    `}
-    ${(props) => props.tablet && css``}
-  ${(props) => props.mobile && css``}
 `;
-
