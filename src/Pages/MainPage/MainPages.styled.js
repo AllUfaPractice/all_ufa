@@ -82,23 +82,33 @@ ${(props) =>
 `;
 
 export const ProductContStyle = styled.div`
+  background-color: rgba(3, 35, 18, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+
   display: grid;
   justify-items: center;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 5%;
   width: 100%;
-  padding: 5vh 0 20vh;
+
+  .penultimate {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  .lastgrid {
+    grid-area: 3 / 2 / 4 / 4;
+  }
 
   ${(props) =>
     props.Tablet &&
     css`
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(5,1fr);
-      row-gap: 1%;
-
+      grid-template-rows: repeat(4, 1fr);
+      .penultimate {
+        grid-area: 4 / 1 / 5 / 2;;
+      }
       .lastgrid {
-        grid-area: 5 / 1 / 6 / 3;;
+        grid-area: 4 / 2 / 5 / 3;;
       }
     `}
 
@@ -106,29 +116,33 @@ export const ProductContStyle = styled.div`
     props.Mobile &&
     css`
       grid-template-columns: repeat(1, 1fr);
-      row-gap: 1%;
+      grid-template-rows: repeat(8, 1fr);
+
+      .penultimate {
+        grid-area: 7 / 1 / 8 / 2;;
+      }
+      .lastgrid {
+        grid-area: 8 / 1 / 9 / 2;;
+      }
     `}
 `;
 
 export const ProductStyle = styled.div`
-  background-color: rgba(3, 35, 18, 0.55);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
   border: 1px solid rgba(0, 0, 0, 0.725);
 
   display: grid;
   grid-template-rows: 1fr 0.6fr 1fr;
   justify-items: center;
-  width: 30vw;
+  width: 33.33vw;
   height: 45vh;
   h3 {
-    font-size: calc(1.9vh + 1.1vw);
+    font-size: calc(2.4vh + 1.4vw);
     color: white;
     text-align: center;
     align-self: center;
   }
   p {
-    font-size: calc(0.9vh + 0.5vw);
+    font-size: calc(1.26vh + 0.63vw);
     color: white;
     text-align: center;
     width: 80%;
@@ -137,23 +151,16 @@ export const ProductStyle = styled.div`
   ${(props) =>
     props.Tablet &&
     css`
-      width: 45vw;
+      width: 50vw;
       height: 40vh;
     `}
 
   ${(props) =>
     props.Mobile &&
     css`
-      width: 75vw;
+      width: 100vw;
       height: 45vh;
-    `}
-
-    h3 {
-    font-size: calc(2.4vh + 1.4vw);
-  }
-  p {
-    font-size: calc(1.26vh + 0.63vw);
-  }
+    `};
 `;
 
 export const ProductLink = styled(Link)`
