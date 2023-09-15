@@ -1,6 +1,7 @@
 // NPM
 import { useMediaQuery } from "@mui/material";
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // Styles
 import {
@@ -48,7 +49,7 @@ const CapitalPage = () => {
         tablet={isTablet}
         mobile={isMobile}
       >
-        <img src={CapitalMainImage} alt="Столица"></img>
+        <LazyLoadImage src={CapitalMainImage} alt="Столица"></LazyLoadImage>
         <MainTitle
           largedesktop={isLargeDesktop}
           desktop={isDesktop}
