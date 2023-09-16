@@ -1,7 +1,6 @@
 // NPM
 import React from "react";
 import { useMediaQuery } from "@mui/material";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 //Styles
 import {
@@ -37,7 +36,7 @@ const BabyBoomPage = () => {
   return (
     <MyGlobalStyles>
       <FirstSlide largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
-        <LazyLoadImage src={BBMainImage} alt="Детки BOOM!"></LazyLoadImage>
+        <img src={BBMainImage} alt="Детки BOOM!"></img>
         <MainTitle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
           <MainTitleText
             largedesktop={isLargeDesktop}
