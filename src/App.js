@@ -1,6 +1,6 @@
 //npm
 import { BrowserRouter as Router } from "react-router-dom";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { AppRoutes } from "./Router";
 import ScrollToTop from "./Scripts/ScrollToTop";
 //Styles
@@ -10,6 +10,7 @@ import theme from "./styles/theme";
 import "./App.css";
 //Components
 import ScrollButton from "./Components/Buttons/ScrollButton/ScrollButton";
+import PreLoader from "./Components/PreLoader/Preloader";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <ScrollButton />
       <Router>
         <ScrollToTop>
+          <PreLoader/>
           <AppRoutes />
         </ScrollToTop>
       </Router>
