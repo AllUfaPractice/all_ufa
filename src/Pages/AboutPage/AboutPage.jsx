@@ -12,12 +12,10 @@ import {
 } from "./AboutPage.styled";
 
 // Global Styles
-import {
-  MyGlobalStyles,
-} from "../../styles/global.styled";
+import { MyGlobalStyles } from "../../styles/global.styled";
 
 //Image
-import AboutImage from "../../Images/AboutImage.png";
+import AboutImage from "../../Images/AboutImage1.png";
 
 const AboutPage = () => {
   const isLargeDesktop = useMediaQuery((theme) => theme.breakpoints.up("xl"));

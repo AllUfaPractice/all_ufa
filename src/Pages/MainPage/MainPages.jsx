@@ -1,6 +1,15 @@
 import React from "react";
 //Styles
-import { MainPageStyle, UTPSlide } from "./MainPages.styled";
+import {
+  MainPageStyle,
+  UTPSlide,
+  ProductContStyle,
+  ProductStyle,
+  ProductLink,
+} from "./MainPages.styled";
+
+import { SecondTitleText } from "../../styles/global.styled";
+
 //Components
 import TVLiveButton from "../../Components/Buttons/TVLiveButton/TVLiveButton";
 
@@ -28,9 +37,138 @@ const MainPage = () => {
         Mobile={isMobile}
       >
         <h1>Реклама на ВСЮ УФУ</h1>
-        <h2>lorem lorem lorem lorem lorem lorem</h2>
+        <h2>Наша миссия: поддержка и продвижение бренда Уфы</h2>
         <TVLiveButton />
       </UTPSlide>
+
+      <SecondTitleText>Наши Предложения</SecondTitleText>
+      <ProductContStyle
+        Desktop={isDesktop}
+        Notebook={isNotebook}
+        Tablet={isTablet}
+        Mobile={isMobile}
+      >
+        <ProductStyle
+          Desktop={isDesktop}
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          <h3>Детки BOOM</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a
+            obcaecati minus esse numquam reprehenderit sequi
+          </p>
+          <ProductLink to="/baby-boom">Read more</ProductLink>
+        </ProductStyle>
+
+        <ProductStyle
+          Desktop={isDesktop}
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          <h3>Столица</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a
+            obcaecati minus esse numquam reprehenderit sequi
+          </p>
+
+          <ProductLink to="/capital">Read more</ProductLink>
+        </ProductStyle>
+
+        <ProductStyle
+          Desktop={isDesktop}
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          <h3>Вкусно</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a
+            obcaecati minus esse numquam reprehenderit sequi
+          </p>
+
+          <ProductLink to="/cooking-show-vkusno">Read more</ProductLink>
+        </ProductStyle>
+
+        <ProductStyle
+          Desktop={isDesktop}
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          <h3>Уфа в Курсе</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a
+            obcaecati minus esse numquam reprehenderit sequi
+          </p>
+
+          <ProductLink to="/ufa-is-aware">Read more</ProductLink>
+        </ProductStyle>
+
+        <ProductStyle
+          Desktop={isDesktop}
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          <h3>Летняя Уфа</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a
+            obcaecati minus esse numquam reprehenderit sequi
+          </p>
+
+          <ProductLink to="/summer-ufa">Read more</ProductLink>
+        </ProductStyle>
+
+        <ProductStyle
+          Desktop={isDesktop}
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          <h3>Прогноз погоды</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a
+            obcaecati minus esse numquam reprehenderit sequi
+          </p>
+
+          <ProductLink to="/weather">Read more</ProductLink>
+        </ProductStyle>
+
+        <ProductStyle
+          className="penultimate"
+          Desktop={isDesktop}
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          <h3>Уфа - Столица детства</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a
+            obcaecati minus esse numquam reprehenderit sequi
+          </p>
+
+          <ProductLink to="/ufa-of-childhood">Read more</ProductLink>
+        </ProductStyle>
+
+        <ProductStyle
+          className="lastgrid"
+          Desktop={isDesktop}
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          <h3>Бегущая строка</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a
+            obcaecati minus esse numquam reprehenderit sequi
+          </p>
+
+          <ProductLink to="/ticker">Read more</ProductLink>
+        </ProductStyle>
+      </ProductContStyle>
     </MainPageStyle>
   );
 };

@@ -29,6 +29,6 @@ export const HeaderStyle = styled.header`
 export const HeaderLogoStyle = styled.img`
   cursor: pointer;
   align-self: center;
-  width: 15vw;
+  width: calc(8.5vh + 5vw);
   max-width: 200px;
 `;
